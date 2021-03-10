@@ -1,7 +1,7 @@
 import './index.css';
 
 const p = document.createElement('p');
-p.textContent = 'Welcome to webpack program';
+p.textContent = 'Bundling and minification';
 document.body.appendChild(p);
 
 const p2 = document.createElement('p');
