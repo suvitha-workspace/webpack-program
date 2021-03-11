@@ -20,10 +20,8 @@ module.exports = merge(commonConfig, {
       {
         test: /\.s[ac]ss$/i,
         use: [
-          MiniCssExtractPlugin.loader,
-          // Translates CSS into CommonJS
-          'css-loader',
-          // Compiles Sass to CSS
+          MiniCssExtractPlugin.loader,          
+          'css-loader',          
           'sass-loader',
         ],
         exclude: /node_modules/,
