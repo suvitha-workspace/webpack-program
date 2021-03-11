@@ -15,6 +15,7 @@ module.exports = merge(commonConfig, {
           MiniCssExtractPlugin.loader,
           'css-loader',
         ],
+        exclude: /node_modules/,
       },
       {
         test: /\.s[ac]ss$/i,
@@ -25,6 +26,7 @@ module.exports = merge(commonConfig, {
           // Compiles Sass to CSS
           'sass-loader',
         ],
+        exclude: /node_modules/,
       },
     ],
   },
